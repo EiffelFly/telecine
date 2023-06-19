@@ -18,7 +18,7 @@ import { record, initTelecine } from "telecine"
 async function recordYourFirstVideo(){
   const { context, scene, browser, page, saveVideo } = initTelecine({
     baseUrl: "https://localhost:3000",
-    headless: false
+    headless: false,
     size: {
       width: 1920,
       height: 1080,
@@ -61,7 +61,7 @@ import { record, initTelecine } from "telecine"
 async function recordYourFirstVideo(){
   const { context, scene, browser, page, saveVideo, click } = initTelecine({
     baseUrl: "https://localhost:3000",
-    headless: false
+    headless: false,
     size: {
       width: 1920,
       height: 1080,
@@ -102,7 +102,7 @@ import { reactSelectAdaptor } from "telecine/adaptors"
 async function recordYourFirstVideo(){
   const { context, scene, browser, page, saveVideo } = initTelecine({
     baseUrl: "https://localhost:3000",
-    headless: false
+    headless: false,
     size: {
       width: 1920,
       height: 1080,
