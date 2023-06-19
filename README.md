@@ -1,6 +1,6 @@
 # Telecine
 
-Telecine is a record video as code framework. It uses Playwright under the hood to let you programmatically record every video about your product. 
+Telecine is a record screen as code framework. It uses Playwright under the hood to let you programmatically record every video about your product. 
 
 ## Installation
 
