@@ -10,8 +10,19 @@
     "playwright",
     "record video as code"
   ],
-  "script": {
-    "build": ""
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "module": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src"
   },
   "files": [
     "dist"
@@ -23,5 +34,8 @@
   },
   "devDependencies": {
     "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "tsup": "^7.0.0"
   }
 }
