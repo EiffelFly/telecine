@@ -20,5 +20,8 @@
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "tsconfig": "workspace:*"
   }
 }
