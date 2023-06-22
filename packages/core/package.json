@@ -12,13 +12,9 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.mjs"
-      },
-      "module": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -33,9 +29,11 @@
     "access": "public"
   },
   "devDependencies": {
-    "tsconfig": "workspace:*"
+    "@types/node": "^18.11.17",
+    "tsconfig": "workspace:*",
+    "tsup": "^7.0.0"
   },
   "dependencies": {
-    "tsup": "^7.0.0"
+    "playwright": "^1.35.1"
   }
 }
